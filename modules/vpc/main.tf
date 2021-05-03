@@ -129,7 +129,7 @@ resource "aws_route_table_association" "private" {
 
 /*==== VPC's Default Security Group ======*/ ## TODO: Implement it better
 resource "aws_security_group" "default" {
-  name        = "${var.environment}-default-sg"
+  name        = "${var.environment}-default-sg1"
   description = "Default security group to allow inbound/outbound from the VPC"
   vpc_id      = "${aws_vpc.vpc.id}"
   depends_on  = [aws_vpc.vpc]
