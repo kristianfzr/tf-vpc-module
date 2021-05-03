@@ -6,7 +6,7 @@ terraform {
     }
   }
 }
-
+# new comment for testing atlantis
 provider "aws" {
   region                  = var.region
   shared_credentials_file = "$HOME/.aws/credentials"
