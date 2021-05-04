@@ -8,7 +8,7 @@ terraform {
 }
 ##
 provider "aws" {
-  region = var.region
+  region                  = var.region
   shared_credentials_file = "$HOME/.aws/credentials"
   profile                 = "default"
   #access_key = var.AWS_ACCESS_KEY_ID
