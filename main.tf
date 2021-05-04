@@ -9,10 +9,10 @@ terraform {
 ##
 provider "aws" {
   region = var.region
-  #shared_credentials_file = "$HOME/.aws/credentials"
-  #profile                 = "default"
-  access_key = var.AWS_ACCESS_KEY_ID
-  secret_key = var.AWS_SECRET_ACCESS_KEY
+  shared_credentials_file = "$HOME/.aws/credentials"
+  profile                 = "default"
+  #access_key = var.AWS_ACCESS_KEY_ID
+  #secret_key = var.AWS_SECRET_ACCESS_KEY
 }
 
 module "vpc" {
