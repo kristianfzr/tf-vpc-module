@@ -33,3 +33,10 @@ variable "production_availability_zones" {
   default     = ["us-east-1a"]
 }
 
+variable "AWS_ACCESS_KEY_ID" {
+  type = string
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  type = string
+}
