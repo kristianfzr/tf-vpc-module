@@ -17,19 +17,19 @@ variable "environment" {
 
 variable "public_subnets_cidr" {
   description = "Public subnets cidr"
-  type        = list
+  type        = list(any)
   default     = ["10.0.1.0/24"]
 }
 
 variable "private_subnets_cidr" {
   description = "Private subnets cidr"
-  type        = list
+  type        = list(any)
   default     = ["10.0.2.0/24"]
 }
 
 variable "production_availability_zones" {
   description = "AZ"
-  type        = list
+  type        = list(any)
   default     = ["us-east-1a"]
 }
 
